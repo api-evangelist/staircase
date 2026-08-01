@@ -1,8 +1,17 @@
 aid: staircase
 name: Staircase
-description: 'Staircase is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Staircase, Inc. operates the Elephant Protocol (elephant.xyz), a decentralized
+  property-data network that aggregates and cryptographically verifies fragmented
+  county property and address records into trusted, agent-consumable data. It
+  publishes 500,000+ enriched property data points and an unusually agent-native
+  developer surface: a Model Context Protocol (MCP) server (@elephant-xyz/mcp,
+  both stdio and hosted), an Elephant CLI (@elephant-xyz/cli) for oracle data
+  transformation and on-chain proof submission to Polygon, a fact-sheet generator,
+  and a library of 14 published Agent Skills for county-data ingestion. An
+  Enterprise API is offered to organizations at scale. Backed by Bessemer Venture
+  Partners; originally a mortgage-technology API company, now focused on real
+  estate data infrastructure.
 url: https://raw.githubusercontent.com/api-evangelist/staircase/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +19,30 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://www.staircase.co/favicon.ico
 tags:
 - Company
 - Fintech
+- Real Estate
+- Property Data
+- Data
+- MCP
+- Agents
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,41 @@ maintainers:
 common:
 - type: Website
   url: https://www.staircase.co/
+- type: DeveloperPortal
+  url: https://elephant.xyz/
+- type: Documentation
+  url: https://github.com/elephant-xyz/docs
+- type: GitHubOrganization
+  url: https://github.com/elephant-xyz
+- type: Blog
+  url: https://www.staircase.co/blog
+- type: Support
+  url: https://discord.com/invite/elephant-xyz
+- type: TermsOfService
+  url: https://www.staircase.co/terms
+- type: PrivacyPolicy
+  url: https://www.staircase.co/privacy
+- type: MCPServer
+  name: Elephant MCP server
+  url: mcp/staircase-mcp.yml
+- type: Packages
+  url: packages/staircase-packages.yml
+- type: SDKs
+  url: packages/staircase-packages.yml
+- type: CLI
+  url: cli/staircase-cli.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DomainSecurity
+  url: security/staircase-domain-security.yml
+- type: Conformance
+  url: conformance/staircase-conformance.yml
+- type: WellKnown
+  url: well-known/staircase-well-known.yml
+- type: LLMsTxt
+  url: llms/staircase-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: derived
+source: >-
+  github.com/elephant-xyz/elephant-mcp, github.com/elephant-xyz/skills,
+  github.com/elephant-xyz/elephant-cli
+note: >-
+  Staircase / Elephant Protocol publishes no OpenAPI, so cross-cutting API
+  standards are asserted from the agent-native tooling it does publish. No SOC 2
+  / ISO 27001 / PCI / HIPAA / FedRAMP compliance program was found published, so
+  no `Compliance` pointer is emitted.
+standards:
+  - id: mcp
+    conforms: true
+    evidence: "@elephant-xyz/mcp implements the Model Context Protocol SDK (stdio + hosted http endpoint)"
+  - id: agent-skills
+    conforms: true
+    evidence: github.com/elephant-xyz/skills publishes 14 SKILL.md agent skills (Anthropic skill format)
+  - id: json-schema
+    conforms: true
+    evidence: MCP getPropertySchema returns full JSON Schema per class/property; lexicon repo defines schemas
+  - id: rfc9457-problem-details
+    conforms: false
+  - id: oauth2
+    conforms: false
+  - id: oidc
+    conforms: false

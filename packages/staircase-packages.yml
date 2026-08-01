@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/org/elephant-xyz
+note: >-
+  Staircase, Inc. operates the Elephant Protocol (elephant.xyz), a decentralized
+  property-data network. Its first-party developer tooling is published under the
+  @elephant-xyz npm org and the github.com/elephant-xyz organization. No PyPI /
+  Maven / NuGet / crates first-party libraries were found.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@elephant-xyz/cli"
+    url: https://www.npmjs.com/package/@elephant-xyz/cli
+    install: npm install -g @elephant-xyz/cli
+    version: 1.58.1
+    repository: https://github.com/elephant-xyz/elephant-cli
+    description: >-
+      CLI for the Elephant Network — transform county property data, compute
+      content-addressed hashes, upload datagroups to IPFS, and submit proofs to
+      the Elephant smart contract on Polygon.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@elephant-xyz/mcp"
+    url: https://www.npmjs.com/package/@elephant-xyz/mcp
+    install: npx -y @elephant-xyz/mcp@latest
+    version: 1.6.0
+    repository: https://github.com/elephant-xyz/elephant-mcp
+    description: >-
+      Model Context Protocol server that exposes Elephant data-graph tooling
+      (property schemas, oracle records, geospatial and SQL queries) to agents.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@elephant-xyz/fact-sheet"
+    url: https://www.npmjs.com/package/@elephant-xyz/fact-sheet
+    install: npm install -g @elephant-xyz/fact-sheet
+    version: 1.2.4
+    repository: https://github.com/elephant-xyz/fact-sheet-template
+    description: >-
+      CLI tool to generate self-contained property fact-sheet websites from JSON
+      data, optimized for IPFS deployment.
+    official: true

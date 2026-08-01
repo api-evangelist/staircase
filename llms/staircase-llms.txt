@@ -1,0 +1,40 @@
+# Staircase (Elephant Protocol)
+
+> Staircase, Inc. operates the Elephant Protocol (elephant.xyz), a decentralized network that aggregates and verifies fragmented property and address records into trusted, agent-consumable data. It currently offers 500,000+ enriched property data points, an Enterprise API, a published Model Context Protocol (MCP) server, a CLI, and a library of Agent Skills for county-data ingestion. Backed by Bessemer Venture Partners.
+
+## Agent-native access
+- Elephant MCP server (npm @elephant-xyz/mcp): https://github.com/elephant-xyz/elephant-mcp
+- Hosted MCP endpoint: https://elephant-mcp-two.vercel.app/mcp
+- Agent Skills library (14 SKILL.md): https://github.com/elephant-xyz/skills
+- Elephant CLI (npm @elephant-xyz/cli): https://github.com/elephant-xyz/elephant-cli
+
+## Packages
+- @elephant-xyz/cli — https://www.npmjs.com/package/@elephant-xyz/cli
+- @elephant-xyz/mcp — https://www.npmjs.com/package/@elephant-xyz/mcp
+- @elephant-xyz/fact-sheet — https://www.npmjs.com/package/@elephant-xyz/fact-sheet
+
+## Docs
+- Protocol documentation: https://github.com/elephant-xyz/docs
+- Property schema: https://github.com/elephant-xyz/docs/blob/main/property-schema.md
+- Litepaper: https://elephant.xyz/litepaper
+- Blog: https://www.staircase.co/blog
+- Data explorer: https://www.staircase.co/data
+
+## Company
+- Website: https://www.staircase.co/
+- Elephant Protocol: https://elephant.xyz/
+- GitHub organization: https://github.com/elephant-xyz
+- Community (Discord): https://discord.com/invite/elephant-xyz
+- Enterprise contact: contact@elephant.xyz
+- Terms of Use: https://www.staircase.co/terms
+- Privacy: https://www.staircase.co/privacy
+- Disclosures: https://www.staircase.co/disclosures
+
+## Artifacts (API Evangelist enrichment)
+- Packages: packages/staircase-packages.yml
+- MCP server: mcp/staircase-mcp.yml
+- CLI: cli/staircase-cli.yml
+- Agent Skills: skills/_index.yml
+- Domain security: security/staircase-domain-security.yml
+- Conformance: conformance/staircase-conformance.yml
+- Well-Known: well-known/staircase-well-known.yml

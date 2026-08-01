@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://github.com/elephant-xyz/elephant-mcp
+package: "@elephant-xyz/mcp"
+server:
+  name: elephant
+  vendor: Staircase, Inc. (Elephant Protocol)
+  transport: stdio
+  install: npx -y @elephant-xyz/mcp@latest
+  hosted_endpoint: https://elephant-mcp-two.vercel.app/mcp
+  hosted_status: 406   # present; requires MCP Accept headers (health endpoint returns 200)
+  runtime: Node.js >= 22.18
+  clients: [Cursor, VS Code, Claude Code, OpenAI Codex, Gemini CLI]
+  description: >-
+    Exposes the Elephant property data graph — county datasets, oracle property
+    records, JSON Schemas, geospatial lookups, and read-only SQL — to AI agents.
+tools:
+  - name: listClassesByDataGroup
+    description: Lists classes attached to an Elephant data group, including friendly names and descriptions.
+  - name: listPropertiesByClassName
+    description: Returns schema property keys for a class.
+  - name: getPropertySchema
+    description: Fetches the full JSON Schema for a specific property and class combination.
+  - name: getVerifiedScriptExamples
+    description: Returns working examples of code that maps data to the Elephant schema (text-embedding search).
+  - name: findPropertiesInArea
+    description: Returns properties whose centroid falls inside a user-supplied bounding box or polygon.
+  - name: sumPropertyValueInArea
+    description: Sums AVM (automated valuation model) values within geographic boundaries.
+  - name: queryProperties
+    description: Runs a read-only SQL SELECT/WITH over a county's query-table (view "properties") via embedded DuckDB.
+  - name: getPropertyQuerySchema
+    description: Returns query-table columns and types.
+  - name: getOracleProperty
+    description: Fetches the full consolidated record for one property (by parcel id, property id, or CID).
+  - name: listOracleProperties
+    description: Paginated per-county property listing.
+  - name: getOracleDatasetInfo
+    description: Per-county dataset summary (property count, export time, source) plus per-source coverage.
+  - name: getPropertyPermits
+    description: On-demand permit harvesting for parcels.

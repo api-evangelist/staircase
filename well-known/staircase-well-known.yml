@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+note: >-
+  Probed the .well-known discovery surface on the Staircase and Elephant hosts.
+  No .well-known documents are published (all 404 / absent) — valid, expected
+  result recorded for auditability. No api.staircase.co host resolves.
+hosts:
+  - host: https://www.staircase.co
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://staircase.co
+    documents:
+      - path: /.well-known/security.txt
+        status: 404   # 308 -> www, then 404
+  - host: https://elephant.xyz
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://api.staircase.co
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 000   # host does not resolve (NXDOMAIN)

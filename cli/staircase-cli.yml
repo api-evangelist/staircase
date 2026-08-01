@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/elephant-xyz/elephant-cli
+name: elephant-cli
+package: "@elephant-xyz/cli"
+binary: elephant-cli
+description: >-
+  First-party CLI for the Elephant Network. Lets oracles transform county
+  property data, compute content-addressed JSON, upload datagroups to IPFS
+  (via Pinata), and submit cryptographic proofs to the Elephant smart contract
+  on Polygon.
+install:
+  - method: npm-global
+    command: npm install -g @elephant-xyz/cli
+  - method: npx
+    command: npx @elephant-xyz/cli --help
+auth:
+  - Polygon RPC endpoint (Alchemy, Infura, or self-hosted)
+  - Oracle private key (stored in an encrypted keystore)
+  - Pinata JWT for IPFS uploads (PINATA_JWT env var)
+  - OpenAI API key for AI script generation (OPENAI_API_KEY env var)
+commands:
+  - name: create-keystore
+    summary: Encrypt a private key for contract submissions.
+  - name: transform
+    summary: Generate canonical seed files or extract structured data from county responses.
+  - name: prepare
+    summary: Fetch HTML/JSON from county websites using HTTP or browser automation.
+  - name: generate-transform
+    summary: Use AI to create extraction scripts from downloaded county data.
+  - name: hash
+    summary: Compute content-addressed JSON and produce submission CSVs.
+  - name: upload
+    summary: Upload datagroups to IPFS via Pinata.
+  - name: submit-to-contract
+    summary: Submit hashes to the Elephant smart contract on Polygon.
+  - name: hex-to-cid
+    summary: Convert a blockchain hex hash to an IPFS CID.
+  - name: cid-to-hex
+    summary: Convert an IPFS CID to a blockchain hex hash.
+  - name: check-gas-price
+    summary: Query current Polygon network gas prices.
+  - name: check-transaction-status
+    summary: Monitor on-chain transaction confirmations.
+  - name: fetch-data
+    summary: Download previously submitted data from IPFS or blockchain.

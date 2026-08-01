@@ -1,0 +1,47 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/elephant-xyz/skills
+note: >-
+  Provider-published Agent Skills (Anthropic SKILL.md format) for operating the
+  Elephant Network oracle-node ingestion pipeline. Two marquee skills are saved
+  verbatim in this directory; the full set of 14 lives in the upstream repo and
+  is indexed here with source URLs.
+skills:
+  - file: staircase-onboard-county.md
+    name: onboard-county
+    saved_verbatim: true
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/onboard-county/SKILL.md
+    description: End-to-end onboarding of a new US county into the Elephant oracle-node ingestion pipeline.
+  - file: staircase-county-discovery.md
+    name: county-discovery
+    saved_verbatim: true
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-discovery/SKILL.md
+    description: Discover a county's property-data sources and assess feasibility for ingestion.
+  - name: bbb-harvest
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/bbb-harvest/SKILL.md
+  - name: bootstrap-oracle-infra
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/bootstrap-oracle-infra/SKILL.md
+  - name: county-appraisal-onboarding
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-appraisal-onboarding/SKILL.md
+  - name: county-ingest-run
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-ingest-run/SKILL.md
+  - name: county-open-data-publish
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-open-data-publish/SKILL.md
+  - name: county-permit-adapter
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-permit-adapter/SKILL.md
+  - name: county-query-table-publish
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-query-table-publish/SKILL.md
+  - name: county-seed-data
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/county-seed-data/SKILL.md
+  - name: deploy-open-data-mcp
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/deploy-open-data-mcp/SKILL.md
+  - name: monitoring-county-ingestion
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/monitoring-county-ingestion/SKILL.md
+  - name: query-db-loading-matching
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/query-db-loading-matching/SKILL.md
+  - name: sunbiz-corporate-ingest
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/sunbiz-corporate-ingest/SKILL.md
+  - name: transform-v2-builder
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/transform-v2-builder/SKILL.md
+  - name: validate-county-transform
+    source: https://github.com/elephant-xyz/skills/blob/main/skills/validate-county-transform/SKILL.md
