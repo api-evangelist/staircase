@@ -48,7 +48,7 @@ image: https://www.staircase.co/favicon.ico
 tags:
 - Company
 - Fintech
-- Real-Estate
+- Real Estate
 - Property Data
 - Data
 - MCP
@@ -63,6 +63,7 @@ tags_raw:
 - MCP
 - Agents
 - Blockchain
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
